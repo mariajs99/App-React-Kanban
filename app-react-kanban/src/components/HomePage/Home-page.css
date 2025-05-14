@@ -1,0 +1,12 @@
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.boxToDo{
+    background-color: rgb(161, 238, 247);
+    border: solid rgb(125, 140, 214);
+    margin: 10px;
+    text-align: center;
+}
