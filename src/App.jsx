@@ -2,8 +2,12 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
-import HomePage from './components/HomePage/Home-page'
-import Sidebar from './components/Sidebar/Sidebar'
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage/HomePage'
+import ColumnTask from "./pages/ColumnTask/ColumnTask"
+import NotFound from './pages/NotFound/NotFound'
+import AboutUs from './pages/AboutUs/AboutUs'
+
 
 function App() {
   
@@ -14,8 +18,18 @@ function App() {
       <Navbar />
 
       {/* <div className='principalContent'> */}
-        <Sidebar />
-        <HomePage/>        
+        {/* <SideBar />
+        <Body/>   */}  
+
+        <Routes>
+          <Route path='/' element={<HomePage/>}/>
+          <Route path='/HomePage' element={<ColumnTask/>}/>
+          <Route path='/AboutUs' element={<AboutUs/>}/>
+
+          
+          <Route path='*' element={<NotFound/>}/>
+        </Routes>
+
       {/* </div> */}
 
       <Footer />

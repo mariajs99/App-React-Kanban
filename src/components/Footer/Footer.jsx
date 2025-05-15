@@ -1,8 +1,11 @@
+import logoGit from "../../assets/github-logo.png"
+import "./Footer.css"
+
 function Footer () {
 
     return (
-        <div>
-            <a href="https://github.com/mariajs99/App-React-Kanban" >Hola</a>        
+        <div className="footer">
+            <a href="https://github.com/mariajs99/App-React-Kanban" target="_blank"><img src={logoGit} alt="" /></a>        
         </div>
     )
 }

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import allUserData from "../../data/userData.json";
-import "./Home-page.css";
+import "./TaskCard.css";
 
-function HomePage() {
+function TaskCard(props) {
   const [taskList, setTaskList] = useState(allUserData);
   
   function btnDeleteTask(index) {
@@ -13,14 +13,12 @@ function HomePage() {
 
   return (
     <main>
+      
       {taskList.map((eachDataTask, index) => {
         return (
-          <div key={eachDataTask.id} className="boxToDo">
+          <div key={eachDataTask.status} className="boxToDo">
             
             <h3>Titulo: {eachDataTask.title}</h3>
-            <p>Descripcion: {eachDataTask.description}</p>
-            <p>Assigne: {eachDataTask.assignee}</p>
-            <p>Priority: {eachDataTask.priority}</p>
               <button onClick={() => btnDeleteTask(index)}>❌</button>
               <button>✅</button>
           </div>
@@ -29,4 +27,4 @@ function HomePage() {
     </main>
   );
 }
-export default HomePage;
+export default TaskCard;

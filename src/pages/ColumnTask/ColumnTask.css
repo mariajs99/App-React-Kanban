@@ -1,0 +1,29 @@
+.columnTask{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.toDo{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.inProgress{
+    margin: 20px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.done{
+    margin: 20px;
+    border: 1px solid black;
+    padding: 20px;
+}

@@ -1,0 +1,21 @@
+.footer{
+    background-color: aqua;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    
+}
+
+.footer img{
+    width: 50px;
+    margin: 10px;
+}
+
+.footer img:hover{
+    transition:0.5s;
+    box-shadow:10px 10px 20px grey;
+    cursor: pointer;
+    border-radius: 50px;
+}
