@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function AddTasks(props) {
   // const [exampleTasks, setUserTasks] = useState(exampleUserTasks)
@@ -11,6 +12,8 @@ function AddTasks(props) {
   const [priorityInputValue, setPriorityInputValue] = useState("");
   /*const [createdDateInputValue, setCreatedDateInputValue] = useState("");
   const [dueDateInputValue, setDueDateInputValue] = useState(""); */
+
+   const navigate = useNavigate();
 
   const handleTitleChange = (event) => {
     setTitleInputValue(event.target.value);
@@ -41,12 +44,19 @@ function AddTasks(props) {
       assignee: assigneeInputValue,
       status: statusInputValue,
       priority: priorityInputValue,
+    
+      
     };
+
+    props.onAddTask(taskToAdd);
+
+
+
   };
   return (
     <div>
       <h2>Crea una nueva tarea</h2>
-      <form>
+      <form onSubmit={handleAddTask}> 
         <div>
           <label htmlFor="text">Title: </label>
           <input type="text" name="title" onChange={handleTitleChange} />
@@ -72,12 +82,12 @@ function AddTasks(props) {
             <option value="">Choose the priority</option>
             <option value="High">High</option>
             <option value="Medium">Medium</option>
-            <option value="Low"></option>
+            <option value="Low">Low</option>
           </select>
 
-          <button>Add Task</button>
+          <button type="submit" >Add Task</button>
 
-          <Link to="/HomePage">
+          <Link to="/MainBoard">
             <button>Go Back</button>
           </Link>
           

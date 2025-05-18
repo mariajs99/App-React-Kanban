@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
+import AddTasks from "../AddTasks/AddTasks";
 
 function SideBar() {
   return (
