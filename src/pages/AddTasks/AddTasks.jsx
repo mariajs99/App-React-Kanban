@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import SideBar from "../SideBar/SideBar";
 
 function AddTasks(props) {
-  // const [exampleTasks, setUserTasks] = useState(exampleUserTasks)
+ 
 
   const [titleInputValue, setTitleInputValue] = useState("");
   const [descriptionInputValue, setDescriptionInputValue] = useState("");
@@ -13,7 +14,7 @@ function AddTasks(props) {
   /*const [createdDateInputValue, setCreatedDateInputValue] = useState("");
   const [dueDateInputValue, setDueDateInputValue] = useState(""); */
 
-   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleTitleChange = (event) => {
     setTitleInputValue(event.target.value);
@@ -47,10 +48,6 @@ function AddTasks(props) {
     
       
     };
-
-    props.onAddTask(taskToAdd);
-
-
 
   };
   return (

@@ -6,7 +6,9 @@ main{
 
 .boxToDo{
     background-color: rgb(161, 238, 247);
-    border: solid rgb(125, 140, 214);
+    border: 2px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     margin: 10px;
+    padding: 10px;
     text-align: center;
 }
