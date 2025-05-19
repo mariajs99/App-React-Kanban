@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function HomePage(){
     return(
-        <Link to="/HomePage">
+        <Link to="/MainBoard">
             <button>
                 Task Menu
             </button>

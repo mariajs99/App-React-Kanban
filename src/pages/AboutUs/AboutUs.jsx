@@ -6,7 +6,7 @@ function AboutUs() {
       <h1>Maria</h1>
       <h1>Alvaro</h1>
 
-      <Link to="/HomePage">
+      <Link to="/MainBoard">
         <button>Volver</button>
       </Link>
     </div>

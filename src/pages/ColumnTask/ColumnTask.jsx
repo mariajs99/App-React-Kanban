@@ -1,9 +1,8 @@
-import SideBar from "../SideBar/SideBar";
 import "./ColumnTask.css";
 import TaskCard from "../TaskCard/TaskCard";
-import { useParams } from "react-router-dom";
 import allUserData from "../../data/userData.json";
 import { useState } from "react";
+import AddTasks from "../AddTasks/AddTasks";
 
 function ColumnTask() {
   const [taskList, setTaskList] = useState(allUserData);
@@ -20,7 +19,6 @@ function ColumnTask() {
 
   return (
     <div className="columnTask">
-      <SideBar />
 
       <div className="tasks">
         <div className="toDo">
