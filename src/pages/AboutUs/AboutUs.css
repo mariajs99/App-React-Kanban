@@ -1,0 +1,26 @@
+.container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #f1f5f9;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.app-description {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 30px;
+}
+h1 {
+  padding: 20px;
+}
+.members {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px;
+}
+
+.go-back-btn:hover {
+  background-color: #2563eb;
+}

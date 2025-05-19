@@ -1,0 +1,45 @@
+.task-details {
+  max-width: 800px;
+  margin: 150px auto;
+  background-color: #f8fafc;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: "Monserrat", sans-serif;
+}
+
+.task-info {
+    margin-bottom: 20px;
+}
+
+.task-details h1 {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1e293b;
+}
+
+.task-info h4 {
+  margin: 12px ;
+  color: #334155;
+  font-weight: normal;
+    font-size: 17px;
+}
+
+.task-info span {
+    font-weight: 800;
+}
+
+.go-back-btn {
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #6f84a6;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
