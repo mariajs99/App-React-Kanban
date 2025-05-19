@@ -1,5 +1,8 @@
-.principalContent{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Public Sans", sans-serif;
+    margin: 10px;
+    background-color: #A8D0E6;
 }
+

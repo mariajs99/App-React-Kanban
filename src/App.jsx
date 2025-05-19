@@ -8,6 +8,7 @@ import ColumnTask from "./pages/ColumnTask/ColumnTask"
 import NotFound from './pages/NotFound/NotFound'
 import AboutUs from './pages/AboutUs/AboutUs'
 import AddTasks from './pages/AddTasks/AddTasks'
+import "./App.css"
 
 
 function App() {
@@ -18,10 +19,6 @@ function App() {
 
       <Navbar />
 
-      {/* <div className='principalContent'> */}
-        {/* <SideBar />
-        <Body/>   */}  
-
         <Routes>
           <Route path='/' element={<HomePage/>}/>
           <Route path='/HomePage' element={<ColumnTask/>}/>
@@ -30,8 +27,6 @@ function App() {
           
           <Route path='*' element={<NotFound/>}/>
         </Routes>
-
-      {/* </div> */}
 
       <Footer />
     </>

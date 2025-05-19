@@ -1,6 +1,7 @@
 .navbar {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    background-color: #90AFC5;
 }
 
 .img-navbar {

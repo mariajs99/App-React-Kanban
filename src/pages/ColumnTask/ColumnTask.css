@@ -14,16 +14,22 @@
     margin: 20px;
     padding: 20px;
     border: 1px solid black;
+    border-radius: 20px;
+    background-color: #e6ffff ;
 }
 
 .inProgress{
     margin: 20px;
     border: 1px solid black;
     padding: 20px;
+    border-radius: 20px;
+    background-color: #e6ffff ;
 }
 
 .done{
     margin: 20px;
     border: 1px solid black;
     padding: 20px;
+    border-radius: 20px;
+    background-color: #e6ffff ;
 }
