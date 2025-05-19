@@ -1,11 +1,7 @@
 import "./ColumnTask.css";
 import TaskCard from "../TaskCard/TaskCard";
-import allUserData from "../../data/userData.json";
-import { useState } from "react";
-import AddTasks from "../AddTasks/AddTasks";
 
-function ColumnTask() {
-  const [taskList, setTaskList] = useState(allUserData);
+function ColumnTask(props) {
 
   /*  function btnDeleteTask(index) {
     const cloneData = [...taskList];
@@ -14,7 +10,7 @@ function ColumnTask() {
     } */
 
   function BtnDeleteTask(id) {
-    setTaskList(taskList.filter((task) => task.id !== id));
+    props.setTaskList(props.taskList.filter((task) => task.id !== id));
   }
 
   return (
@@ -23,7 +19,7 @@ function ColumnTask() {
       <div className="tasks">
         <div className="toDo">
           <h1>To Do</h1>
-          {taskList
+          {props.taskList
             .filter((eachTask) => {
               return eachTask.status === "To Do";
             })
@@ -40,7 +36,7 @@ function ColumnTask() {
 
         <div className="inProgress">
           <h1>In progress</h1>
-          {taskList
+          {props.taskList
             .filter((eachTask) => {
               return eachTask.status === "In Progress";
             })
@@ -56,7 +52,7 @@ function ColumnTask() {
         </div>
         <div className="done">
           <h1>Done</h1>
-          {taskList
+          {props.taskList
             .filter((eachTask) => {
               return eachTask.status === "Done";
             })

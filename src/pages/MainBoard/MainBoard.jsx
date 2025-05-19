@@ -1,10 +1,9 @@
 import ColumnTask from "../ColumnTask/ColumnTask";
 import SideBar from "../SideBar/SideBar";
-import { useState } from 'react'
 import "./MainBoard.css"
 
 
-function MainBoard() {
+function MainBoard(props) {
 /*    const [tasksState, setTasksState] = useState([]);
 
     const handleAddTask = ((newTask) => {
@@ -15,8 +14,8 @@ function MainBoard() {
 
     return (
         <div className="main-board">
-            <SideBar/>
-            <ColumnTask />
+            <SideBar />
+            <ColumnTask taskList={props.taskList} setTaskList={props.setTaskList}/>
         </div>
     )
 }
