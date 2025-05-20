@@ -3,13 +3,27 @@ import TaskCard from "../TaskCard/TaskCard";
 
 function ColumnTask(props) {
 
-  function BtnDeleteTask(id) {
-      props.setTaskList(props.taskList.filter((task) => task.id !== id));
+  function handleDeleteTask(id) {
+    props.setTaskList(props.taskList.filter((task) => task.id !== id));
   }
 
-  function selectStatus() {
+  function handleChangeStatus (event, id) {
 
-    props.setTaskList(props.taskList.filter((task) => task.status !== status));
+    props.setTaskList((allTask)=>{
+      const clone = structuredClone(allTask)
+
+      let indexTask = clone.findIndex(task => task.id === id)
+      clone[indexTask].status = event.target.value //esta es mejor *LA HEMOS HECHO NOSOTROS*
+
+      /* let task = clone.find(task => task.id === id)
+      task.status = event.target.value */
+
+      return clone
+    })
+
+    console.log(event.target.value)
+    console.log(id) 
+
   }
 
   return (
@@ -27,8 +41,8 @@ function ColumnTask(props) {
                 <TaskCard
                   key={eachTask.id}
                   eachTask={eachTask}
-                  BtnDeleteTask={() => BtnDeleteTask(eachTask.id)}
-                  
+                  handleDeleteTask={handleDeleteTask}
+                  handleChangeStatus={handleChangeStatus}
                 />
               );
             })}
@@ -45,7 +59,8 @@ function ColumnTask(props) {
                 <TaskCard
                   key={eachTask.id}
                   eachTask={eachTask}
-                  BtnDeleteTask={() => BtnDeleteTask(eachTask.id)}
+                  handleDeleteTask={handleDeleteTask}
+                  handleChangeStatus={handleChangeStatus}
                 />
               );
             })}
@@ -61,7 +76,8 @@ function ColumnTask(props) {
                 <TaskCard
                   key={eachTask.id}
                   eachTask={eachTask}
-                  BtnDeleteTask={() => BtnDeleteTask(eachTask.id)}
+                  handleDeleteTask={handleDeleteTask}
+                  handleChangeStatus={handleChangeStatus}
                 />
               );
             })}
