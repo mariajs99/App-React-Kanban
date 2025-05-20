@@ -27,7 +27,6 @@ function ColumnTask(props) {
   }
 
   return (
-    <div className="columnTask">
 
       <div className="tasks">
         <div className="toDo">
@@ -83,7 +82,6 @@ function ColumnTask(props) {
             })}
         </div>
       </div>
-    </div>
   );
 }
 

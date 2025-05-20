@@ -2,8 +2,10 @@
     display:flex;
     justify-content: space-evenly;
     background-color: #90AFC5;
+    align-items: center;
 }
 
 .img-navbar {
-    width: 30px;
+    width: 80px;
+    height: 80px;
 }
