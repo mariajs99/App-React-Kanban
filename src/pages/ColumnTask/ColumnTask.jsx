@@ -4,7 +4,7 @@ import TaskCard from "../TaskCard/TaskCard";
 function ColumnTask(props) {
 
   function BtnDeleteTask(id) {
-    
+      props.setTaskList(props.taskList.filter((task) => task.id !== id));
   }
 
   function selectStatus() {
