@@ -1,15 +1,8 @@
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
-import AddTasks from "../AddTasks/AddTasks";
-import  {useState} from "react"
 
-function SideBar(props) {
-/*  const [taskToAdd, setTaskToAdd] = useState()
-  props.handleAddTask(taskToAdd); */
+function SideBar() {
 
- /* const handleAddTaks = () => {
-    setPassAddTasks(true);
-  }*/
   return (
       <div className="SideBar-menu">
         <Link to="/">
