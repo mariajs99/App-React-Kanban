@@ -4,13 +4,6 @@ import "./MainBoard.css"
 
 
 function MainBoard(props) {
-/*    const [tasksState, setTasksState] = useState([]);
-
-    const handleAddTask = ((newTask) => {
-        setTasksState((prevTasks) => [...prevTasks, newTask]);
-            })
-         */
-
 
     return (
         <div className="main-board">
