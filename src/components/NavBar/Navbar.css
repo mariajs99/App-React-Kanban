@@ -1,11 +1,17 @@
 .navbar {
     display:flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
     background-color: #90AFC5;
     align-items: center;
+    height: 90px;
 }
 
 .img-navbar {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    margin-left: 20px;
+}
+
+.navbar h1 {
+
+    margin-right: 20px;
 }

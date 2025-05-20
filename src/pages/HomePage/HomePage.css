@@ -1,0 +1,35 @@
+.homepage-container {
+  width: 900px;
+  height: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.homepage-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.homepage-container p {
+  margin: 50px;
+  font-size: 1.5rem;
+  color: #696969;
+  margin-bottom: 30px;
+}
+
+.homepage-container button {
+background-color: rgb(144, 175, 197);
+  color: white;
+  font-size: 1.2rem;
+  padding: 25px;
+  margin-top: 70px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

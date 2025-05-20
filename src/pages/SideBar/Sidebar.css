@@ -1,22 +1,26 @@
 .SideBar-menu {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 12rem;
   background-color: rgb(255, 255, 255);
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15);
   gap: 15px;
-  justify-content: center;
-  align-items: center;
-  max-height: 100%;
+  justify-content: flex-start;
+  align-items: start;
 }
-
+.btnHome {
+  margin-top: 30px;
+}
 .SideBar-menu button {
-  background-color: rgb(125, 140, 214);
+  background-color: rgb(144, 175, 197);
   border: none;
   color: white;
   padding: 15px;
   border-radius: 8px;
   cursor: pointer;
-  display: flex;
+}
+
+a {
+  text-decoration: none;
 }

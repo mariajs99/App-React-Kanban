@@ -11,7 +11,7 @@ function TaskCard(props) {
           <button className="btn-taskDetail">See more</button>
         </Link>
 
-        <button onClick={() => props.handleDeleteTask(props.eachTask.id)}>
+        <button className="delete" onClick={() => props.handleDeleteTask(props.eachTask.id)}>
           ❌
         </button>
 

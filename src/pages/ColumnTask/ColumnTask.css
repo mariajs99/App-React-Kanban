@@ -1,31 +1,39 @@
-.tasks{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    text-align: center;
-    width: 100%;
+.tasks {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  color: #2c2c2c;
 }
 
-.toDo{
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color: #e6ffff ;
+.tasks > div {
+  width: 350px;;
+  padding: 10px;
+  min-height: 200px;
+  overflow-y: auto;
 }
 
-.inProgress{
-    margin: 20px;
-    border: 1px solid black;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #e6ffff ;
+.toDo {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid rgb(159, 159, 159);
+  border-radius: 20px;
+  background-color: #e6ffff;
 }
 
-.done{
-    margin: 20px;
-    border: 1px solid black;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #e6ffff ;
+.inProgress {
+  margin: 20px;
+  border: 1px solid rgb(159, 159, 159);
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #e6ffff;
+}
+
+.done {
+  margin: 20px;
+  border: 1px solid rgb(159, 159, 159);
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #e6ffff;
 }

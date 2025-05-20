@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./AboutUs.css";
-import userImg from "../../assets/images.png";
+import userImg from "../../assets/capi.png";
+import userImgDos from "../../assets/gati.png";
 
 function AboutUs() {
   return (
@@ -19,12 +20,12 @@ function AboutUs() {
       <div className="team-members">
         <h1>About us</h1>
         <div className="members">
-          <img src={userImg} width={"100px"} />
-          <img src={userImg} width={"100px"} />
+          <img src={userImgDos} width={"150px"} />
+          <img src={userImg} width={"150px"} />
         </div>
         <div className="members">
           <h3>María</h3>
-          <h3>Alvaro</h3>
+          <a className="rickleada" href="https://youtu.be/dQw4w9WgXcQ"><h3>Álvaro</h3> </a>
         </div>
       </div>
 

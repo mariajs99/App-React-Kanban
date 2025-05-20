@@ -5,7 +5,7 @@ function Navbar() {
         <div className="navbar">
         
         <img src="/src/assets/ironhack-1.svg" className="img-navbar"/>
-        <h1>Kanban kanban</h1>
+        <h1>TaskFlow</h1>
         </div>
 
     )
