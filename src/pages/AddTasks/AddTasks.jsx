@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useRef } from "react";
 
 function AddTasks(props) {
 
   const formRef = useRef(null);
+  const navigate = useNavigate();
 
   const [titleInputValue, setTitleInputValue] = useState("");
   const [descriptionInputValue, setDescriptionInputValue] = useState("");
@@ -44,7 +45,7 @@ function AddTasks(props) {
       assignee: assigneeInputValue,
       status: statusInputValue,
       priority: priorityInputValue,
-      id: Date.now()
+      id: String(Date.now())
     };
 
     props.setTaskList((actualValeOfTheState) => {
@@ -57,12 +58,14 @@ function AddTasks(props) {
     setAssigneeInputValue("");
     setStatusInputValue("");
     setPriorityInputValue("")
-
+  
+     navigate("/MainBoard");
   };
+
 
   return (
     <div>
-      <h2>Crea una nueva tarea</h2>
+      <h2>Create a new task</h2>
       <form onSubmit={handleAddTask} ref={formRef}> 
         <div>
           <label htmlFor="text">Title: </label>
@@ -79,14 +82,14 @@ function AddTasks(props) {
           <input type="text" name="assignee" onChange={handleAssigneeChange} />
 
           <select name="status" id="" onChange={handleStatusChange}>
-            <option value="">Choose an option</option>
+            <option value="">Choose status</option>
             <option value="To Do">To do</option>
             <option value="In Progress">In progress</option>
             <option value="Done">Done</option>
           </select>
 
           <select name="priority" id="" onChange={handlePriorityChange}>
-            <option value="">Choose the priority</option>
+            <option value="">Choose priority</option>
             <option value="High">High</option>
             <option value="Medium">Medium</option>
             <option value="Low">Low</option>

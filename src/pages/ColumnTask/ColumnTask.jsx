@@ -3,14 +3,13 @@ import TaskCard from "../TaskCard/TaskCard";
 
 function ColumnTask(props) {
 
-  /*  function btnDeleteTask(index) {
-    const cloneData = [...taskList];
-    cloneData.splice(index, 1);
-    setTaskList(cloneData);
-    } */
-
   function BtnDeleteTask(id) {
-    props.setTaskList(props.taskList.filter((task) => task.id !== id));
+    
+  }
+
+  function selectStatus() {
+
+    props.setTaskList(props.taskList.filter((task) => task.status !== status));
   }
 
   return (
@@ -29,6 +28,7 @@ function ColumnTask(props) {
                   key={eachTask.id}
                   eachTask={eachTask}
                   BtnDeleteTask={() => BtnDeleteTask(eachTask.id)}
+                  
                 />
               );
             })}

@@ -1,7 +1,7 @@
 .container {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 60px auto;
-  padding: 40px;
+  padding: 30px;
   background-color: #f1f5f9;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -10,7 +10,7 @@
 .app-description {
   font-size: 1.1rem;
   color: #475569;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 h1 {
   padding: 20px;
@@ -18,7 +18,7 @@ h1 {
 .members {
   display: flex;
   justify-content: space-around;
-  margin: 40px;
+  margin: 30px;
 }
 
 .go-back-btn:hover {
